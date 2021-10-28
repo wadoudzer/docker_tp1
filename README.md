@@ -59,4 +59,14 @@ EX 4 : Image Building
 
 EX 5 : Using a database within a docker container
  
+1- pulling the mysql image from docker hub : docker pull mysql:latest
 
+2- runnig mysql container : docker run --name mysql-db -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<password> mysql:latest
+
+3- pulling the phpmyadmin image from docker : docker pull phpmyadmin/phpmyadmin:latest
+
+4- runnnig phpmyadmin container while linking it to mysql : docker run --name my_phpmyadmin -d --link mysql-db:db -p 8081:80 phpmyadmin/phpmyadmin
+ 
+5- connexion + database and table creation 
+
+6- See image.png
