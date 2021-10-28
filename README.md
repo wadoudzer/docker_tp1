@@ -47,4 +47,13 @@ Ex 3 : Executing a web sever within a docker container :
 
 6- check screenshot.png to see the web page runnning  
 
+EX 4 : Image Building
+
+1- docker build -t webserver
+2- docker run -dit -p 80:8080 webserver
+3- docker ps 
+4- check image.png to see the image running 
+
+EX 5 : Using a database within a docker container
+ 
 
