@@ -31,14 +31,20 @@ Ex 2 : New repository creation :
 4- git commit -m "name>"
 5- git push origin master
 
-Ex 3 : Executing a web sever within a docker container
+Ex 3 : Executing a web sever within a docker container :
+
 1-  systemctl start docker
+
 2- docker run -dit --name devopstp -p 8080:80 /home/user/website/:/usr/local/apache2/htdocs httpd:2.4 
+
 2- explanation : - setting an apache2 container named "devopstp" using the image httpd:2.4 from docker hub
                  - -p addressing port
 		 - mapping /home/user/website on the container in /usr/local/apache2/htdocs
+
 3- docker ps (checking if container is active)
+
 5- creating the file index.html that serves as a simple web page inside /home/user/website
+
 6- check screenshot.png to see the web page runnning  
 
 
